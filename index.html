@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet" />
+    <title>WebCore</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="form">
+        <div class="form-painting">
+          <div class="form-painting__logo">
+            <img src="./dist/img/logo.svg" alt="" class="form-painting__logo-image" />
+          </div>
+          <div class="form-painting__background">
+            <img src="./dist/img/bg.jpg" alt="" class="form-painting__background-image" />
+          </div>
+        </div>
+        <!-- /.form-painting -->
+        <div class="form-info">
+          <div class="form-info__name">
+            <h1 class="form-info__title">Get iinto it today</h1>
+            <span class="form-info__text">There is no charge or obligation upon registration.</span>
+          </div>
+          <!-- /.form-info__name-->
+          <div class="form-info__social">
+            <button class="form-info__social-fb">
+              <div class="form-info__social-logo">
+                <img src="./dist/img/facebook.svg" alt="" class="form-info__social-image" />
+              </div>
+              <span class="form-info__social-text">Register whit Facebook</span>
+            </button>
+            <button class="form-info__social-linkedin">
+              <div class="form-info__social-logo">
+                <img src="./dist/img/linkedin.svg" alt="" class="form-info__social-image" />
+              </div>
+              <span class="form-info__social-text">Register whit Linkedin</span>
+            </button>
+          </div>
+          <!-- /.form-info__social-->
+          <div class="form-info__separator">
+            <hr class="form-info__separator-left" />
+            <span class="form-info__separator-text">OR</span>
+            <hr class="form-info__separator-right" />
+          </div>
+          <!-- /.form-info__separator -->
+          <form action="" class="form-info__contacts">
+            <div class="form-info__contact">
+              <div class="form-info__contact-email">
+                <span class="form-info__contact-text">Email</span>
+                <input type="email" name="name" required="required" class="form-info__contact-input" />
+              </div>
+              <div class="form-info__contact-phone">
+                <span class="form-info__contact-text">Phone</span>
+                <input type="text" name="email" required="required" class="form-info__contact-input" />
+              </div>
+            </div>
+            <div class="form-info__contact-question">
+              <h2 class="form-info__contact-title">What type of investor are you?</h2>
+              <span class="form-info__contact-text">Select the type of investor you are below.</span>
+            </div>
+            <div class="form-info__check">
+              <label class="custom-radio"><input type="radio" class="form-info__check-text" /><span>Individual</span></label>
+              <label class="custom-radio"><input type="radio" class="form-info__check-text" /><span>Business</span></label>
+              <label class="custom-radio"><input type="radio" class="form-info__check-text" /><span>IRA</span></label>
+              <label class="custom-radio"><input type="radio" class="form-info__check-text" /><span>Trust</span></label>
+            </div>
+            <p class="form-info__clue">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</p>
+            <!-- <p class="form-info__checked">I am a legal entity investing on behalf of the company</p> -->
+            <label class="form-info__option-checkbox"
+              ><input type="checkbox" class="form-info__option-input" /><span class="form-info__option-text">I agree to the terms and receiving notifications from iinto </span
+              ><a href="#">View full terms</a></label
+            >
+            <button class="form-info__submit">Create Account</button>
+          </form>
+        </div>
+        <!-- /.form-info -->
+      </section>
+    </div>
+  </body>
+</html>

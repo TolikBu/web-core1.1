@@ -1,0 +1,125 @@
+.form
+  background-color: #fff
+  display: flex
+  justify-content: space-between
+  &-painting
+    position: relative
+    &__logo
+      position: absolute
+      margin-left: 40px
+      margin-top: 40px
+      width: 140px
+      &-image
+        width: 100%
+    &__background
+      width: auto
+      &-image
+        display: block
+  &-info
+    padding: 115px 75px 0 75px
+    box-shadow: 8px 6px 34px -9px rgba(34, 60, 80, 0.2)
+    &__name
+      margin-bottom: 40px
+    &__title
+      font-size: 22px
+      margin: 0
+      margin-bottom: 20px
+    &__text
+      color: $gray
+    &__social
+      @include flex
+      margin-bottom: 40px
+      &-fb, &-linkedin
+        display: flex
+        align-items: center
+        padding: 10px 15px
+        border: none
+        outline: none
+        min-width: 245px
+        color: #fff
+        font-size: 14px
+      &-fb
+        background-color: $fb
+        &:hover
+          background-color: $blue
+      &-linkedin
+        background-color: $linkedin
+        &:hover
+          background-color: $blue
+      &-image
+        width: 20px
+        margin-right: 30px
+    &__separator
+      margin: auto
+      width: 250px
+      margin-bottom: 40px
+      &-left, &-right
+        width: 44%
+        height: 1px
+        background-color: $lightGray2
+        border: none
+      &-left
+        float: left
+        margin-right: 5px
+      &-right
+        float: right
+      &-text
+        font-size: 14px
+    &__contact
+      @include flex
+      margin-bottom: 60px
+      &-text
+        font-size: 12px
+        margin-bottom: 5px
+      &-email, &-phone
+        padding: 5px 10px
+        width: 245px
+        max-width: 245px
+        display: flex
+        flex-direction: column
+        height: 55px
+        border: 1px solid $white1
+        color: $gray
+        &:hover
+          border-left: 2px solid $blue
+      &-input
+        border: none
+        outline: none
+        background-color: inherit
+      &-question
+        margin-bottom: 50px
+      &-title
+        font-size: 16px
+        margin: 0
+        margin-bottom: 20px
+      &-text
+        font-size: 10px
+        color: $gray
+    &__check
+      display: flex
+      align-items: center
+      margin-bottom: 35px
+    &__clue
+      padding: 10px
+      max-width: 270px
+      margin-left: 15px
+      color: $lightGray2
+      margin-bottom: 65px
+      box-shadow: 8px 6px 34px 2px rgba(34, 60, 80, 0.2)
+    &__option
+      &-checkbox
+        display: inline-block
+        margin-bottom: 40px
+      &-input
+        margin-right: 10px
+      &-text
+        color: $lightGray2
+    &__submit
+      color: $white2
+      padding: 10px 50px
+      border: none
+      border-radius: 5px
+      outline: none
+      background-color: $blue
+      &:hover
+        background-color: $fb
